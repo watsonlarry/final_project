@@ -1,0 +1,17 @@
+SELECT * FROM education;
+SELECT * FROM homeless;
+--Inner JOIN for two tables
+SELECT *
+FROM "homeless"
+INNER JOIN "education" ON "homeless"."State_Year" = "education"."State_Year";
+
+--Create table from JOIN
+CREATE TABLE homeless_edu AS
+SELECT "e"."State_Year", "e"."TOTAL_REVENUE", "e"."TOTAL_EXPENDITURE", "e"."GRADES_PK_G", "e"."GRADES_KG_G",
+"e"."GRADES_4_G",
+"e"."GRADES_8_G",
+"e"."GRADES_12_G",
+"e"."GRADES_1_8_G","e"."GRADES_9_12_G", "e"."GRADES_ALL_G", 
+"h"."Year", "h"."State", "h"."Sheltered_Cnt", "h"."Unsheltered_Cnt", "h"."Other_Cnt"
+FROM education AS e
+INNER JOIN homeless AS h USING ("State_Year"); 

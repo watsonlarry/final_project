@@ -1,0 +1,14 @@
+Slides to Present:
+Intro, Project Overview (3-7), Postgres Database Integration (13-14)
+
+For Slide 5: 
+Keep in mind that the homeless data is gathered manually and is basically estimated 
+So we expect some margin of error due to this
+
+For Slide 14: 
+Database made to store  static data though the "db_creator.py" file by taking the CSV that were created from the data cleaning/processing file.
+
+Database interfaces with the project by connecting to the machine learning file using "psycopg2"
+Includes the tables for "homeless_processed" and "education_processed" CSVs.
+Created an INNER JOIN through Postgres and included the querey code in "querey.txt" file.
+Includes the SQLAlchemy connection string "db_creator.py"

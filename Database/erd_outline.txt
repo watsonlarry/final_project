@@ -1,0 +1,23 @@
+homeless_table
+-
+State_Year PK varchar FK >- education_table.State_Year
+Year int
+State varchar
+Homeless_Count int
+
+
+education_table
+-
+State_Year PK varchar
+STATE varchar
+YEAR int
+TOTAL_REVENUE int
+TOTAL_EXPENDITURE int
+GRADES_PK_G int
+GRADES_KG_G int
+GRADES_4_G int
+GRADES_8_G int
+GRADES_12_G int
+GRADES_1_8_G int
+GRADES_9_12_G int
+GRADES_ALL_G int
